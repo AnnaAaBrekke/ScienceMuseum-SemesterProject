@@ -1,7 +1,100 @@
 
-
-.body {
+body {
     font-family: 'Sora', sans-serif;
-    color: blue;
+    background: linear-gradient(to bottom, rgb(202,73,73), rgb(158,126,123));
+    padding: 1rem;
 }
+
+
+/*Header*/
+
+
+
+
+
+/*Footer*/
+
+
+
+
+
+
+
+/*Home*/
+
+.flex-grid-two {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.flex-grid-two .column {
+    flex: 1;
+    width: 45%;
+}
+
+.flex-grid-three {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-grid-three .column {
+    width: 32%;
+}
+
+.column {
+    background-color: white;
+    padding: 1rem;
+
+}
+
+
+
+
+
+/*Visit*/
+
+
+
+
+
+
+/*Exhibitions*/
+
+
+
+
+
+/*Contribution*/
+
+
+
+
+
+
+/*Educate*/
+
+
+
+
+
+/*About Us*/
+
+
+
+
+
+/*Contact Us*/
+
+
+
+
+
+
+/*Privacy Policy/Terms&Conditions*/
+
+
 
