@@ -42,13 +42,11 @@ header {
 
 .flex-grid-two .column {
     flex: 1;
-}
-
-.column {
     background-color: rgb(237, 95, 81);
     padding: 1rem;
     border-radius: 5px;
-    border: solid black;
+    border: solid black 2px;
+    min-width: 380px
 }
 
 /* First part of Home */
@@ -64,12 +62,11 @@ header {
 .flex-grid-two button {
     background-color: rgb(202, 73, 73);
     border-radius: 10px;
-    border: solid black;
+    border: solid black 3px;
     justify-content: center;
-}
-
-.plan h {
     font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
 }
 
 .girl-VR {
@@ -105,11 +102,15 @@ header {
 
 /* Third part of Home */
 
+.text-news {
+    font-size: 32px;
+    font-weight: 700;
+}
+
 .astronaut,
 .girl-machine {
     max-width: 567px;
     border-radius: 5px;
-
 }
 
 /* Fourth part of Home */
@@ -118,25 +119,23 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-bottom: 1rem;
     background-color: #000000;
     border-radius: 5px;
+    align-items: center
+
 }
 
 .flex-grid-two-dark .column-dark {
     flex: 1;
     color: #FFFFFF;
-    padding: 3rem;
+    padding: 2.5rem;
     border-radius: 5px;
-    align-items: center;
 }
 
 .flex-grid-two-dark h3 {
     font-size: 32px;
+    text-decoration: underline;
 }
-
 
 .flex-grid-two-dark p {
     font-size: 24px;
@@ -145,8 +144,83 @@ header {
 
 .night{
     max-width: 320px;
-    max-height: ;
+    max-height: auto;
     border-radius: 5px;
+}
+
+/* Fifth part of Home */
+
+.home-text {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin: 3rem;
+}
+
+/* Sixth part of Home */
+
+
+.flex-grid-two .column-educate {
+    flex: 1;
+    flex-direction: row;
+    background-color: white;
+    padding: 1.5rem;
+    border: solid black 2px;
+    border-radius: 5px;
+    align-items: center;
+    min-width: 380px
+}
+
+.column-educate h3 {
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+.learn {
+    width: 623px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.YoungStarsLogo {
+    
+}
+
+.teacher {
+    width: 370px;
+    border-radius: 5px;
+}
+
+.researcher {
+    width: 535px;
+    border-radius: 5px;
+}
+
+/* Last part of Home */
+
+.last-part-home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.home-text-two {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.explore {
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.whale {
+    max-width: 500px;
+    height: auto;
+    border-radius: 5px; 
 }
 
 
@@ -179,7 +253,11 @@ header {
 
 /*About Us*/
 
-
+.exhibits {
+    width: 707px;
+    height: auto;
+    align-items: center;
+}
 
 
 
