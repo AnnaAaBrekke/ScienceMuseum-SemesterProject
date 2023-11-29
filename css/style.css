@@ -34,7 +34,6 @@ header {
 .flex-grid-two {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     gap: 1rem;
     margin-bottom: 1rem;
@@ -118,11 +117,9 @@ header {
 .flex-grid-two-dark {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     background-color: #000000;
     border-radius: 5px;
     align-items: center
-
 }
 
 .flex-grid-two-dark .column-dark {
