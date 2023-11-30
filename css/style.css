@@ -1,8 +1,15 @@
 
-body {
+#homePage {
     font-family: 'Sora', sans-serif;
     background: linear-gradient(to bottom, rgb(202,73,73), rgb(158,126,123));
     overflow-x: hidden;
+}
+
+#contactPage {
+    font-family: 'Sora', sans-serif;
+    overflow-x: hidden;
+    background: #000000;
+    color: #FFFFFF;
 }
 
 main {
@@ -21,7 +28,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 
@@ -29,12 +35,7 @@ header {
 
 
 
-
-
-
-
 /*Home*/
-
 
 .flex-grid-two {
     display: flex;
@@ -63,7 +64,7 @@ header {
     font-weight: 400;
 }
 
-.flex-grid-two button {
+input[type=button] {
     background-color: rgb(202, 73, 73);
     border-radius: 10px;
     border: solid black 3px;
@@ -71,6 +72,11 @@ header {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 2.5rem;
+}
+
+input[type=button]:hover {
+    background-color: #ff9999; 
+    cursor: pointer; 
 }
 
 .girl-VR {
@@ -252,12 +258,52 @@ header {
     align-items: center;
 }
 
-
-
 /*Contact Us*/
 
+.flex-grid {
+    padding: 0.5rem;
+}
 
+.flex-grid .column {
+    display: flex;
+    flex: 1;
+    background: rgb(14, 14, 12);
+    padding: 1rem;
+    border-radius: 5px;
+    border: solid black 2px;
+    justify-content: center;
+    align-items: center;
+}
 
+.flex-grid h1 {
+    font-size: 40px;
+}
+
+input[type="text"] {
+    margin-bottom: 1rem;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+input[type="message"] {
+    font-size: 20px;
+    border-radius: 5px;
+    height: 150px;
+}
+
+input[type="submit"] {
+    color: #000000; 
+    text-align: center; 
+    display: inline-block;
+    font-size: 20px; 
+    border-radius: 5px; 
+    cursor: pointer;
+    margin-left: 26%;
+    width: 100px;
+    border-radius: 20px;
+    border: solid black;
+    background-color: #FFFFFF;
+}
 
 
 
