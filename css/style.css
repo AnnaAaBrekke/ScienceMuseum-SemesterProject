@@ -258,7 +258,23 @@ input[type=button]:hover {
     align-items: center;
 }
 
-/*Contact Us*/
+/*Contact Us/Visit*/
+
+.museum {
+    margin-bottom: 1rem;
+    width: 700px;
+}
+
+#services {
+    background-image: url(/images/luke-ellis-craven-400722.jpg);
+    background-size:cover; 
+    background-position: center;
+    color: #000000;
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+
+/*Contact Us Form*/
 
 .flex-grid {
     padding: 0.5rem;
@@ -273,10 +289,17 @@ input[type=button]:hover {
     border: solid black 2px;
     justify-content: center;
     align-items: center;
+    color: #FFFFFF;
 }
 
-.flex-grid h1 {
+.flex-grid h2 {
     font-size: 40px;
+    color: #FFFFFF;
+}
+
+.flex-grid p {
+    font-size: 20px;
+    text-decoration: solid;
 }
 
 input[type="text"] {
