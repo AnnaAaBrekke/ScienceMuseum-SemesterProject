@@ -9,6 +9,10 @@ main {
     padding: 1rem;
 }
 
+main img {
+    border-radius: 5px;
+}
+
 /*Header*/
 
 header {
@@ -73,7 +77,6 @@ header {
     width: 330px;
     height: auto;
     transform: scaleX(-1);
-    border-radius: 5px;
 }
 
 /* Second part of Home */
@@ -110,7 +113,7 @@ header {
 .astronaut,
 .girl-machine {
     max-width: 567px;
-    border-radius: 5px;
+    height: auto;
 }
 
 /* Fourth part of Home */
@@ -143,7 +146,6 @@ header {
 .night{
     max-width: 320px;
     max-height: auto;
-    border-radius: 5px;
 }
 
 /* Fifth part of Home */
@@ -161,12 +163,13 @@ header {
 .flex-grid-two .column-educate {
     flex: 1;
     flex-direction: row;
+    flex-wrap: wrap;
     background-color: white;
     padding: 1.5rem;
     border: solid black 2px;
     border-radius: 5px;
-    align-items: center;
-    min-width: 380px
+    justify-content: center;
+    min-width: 380px;
 }
 
 .column-educate h3 {
@@ -175,23 +178,15 @@ header {
 }
 
 .learn {
-    width: 623px;
+    width: 350px;
     height: auto;
-    border-radius: 5px;
 }
 
 .YoungStarsLogo {
-    
-}
-
-.teacher {
-    width: 370px;
-    border-radius: 5px;
-}
-
-.researcher {
-    width: 535px;
-    border-radius: 5px;
+    width: 350px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Last part of Home */
@@ -216,12 +211,9 @@ header {
 }
 
 .whale {
-    max-width: 500px;
+    max-width: 900px;
     height: auto;
-    border-radius: 5px; 
 }
-
-
 
 /*Visit*/
 
@@ -246,7 +238,10 @@ header {
 /*Educate*/
 
 
-
+.researcher {
+    width: 535px;
+    border-radius: 5px;
+}
 
 
 /*About Us*/
