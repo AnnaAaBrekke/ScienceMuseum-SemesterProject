@@ -1,5 +1,5 @@
 
-#homePage {
+#homePage{
     font-family: 'Sora', sans-serif;
     background: linear-gradient(to bottom, rgb(202,73,73), rgb(158,126,123));
     overflow-x: hidden;
@@ -12,7 +12,8 @@
 }
 
 
-#contactPage {
+#contactPage,
+#aboutPage  {
     font-family: 'Sora', sans-serif;
     overflow-x: hidden;
     background: #000000;
@@ -396,10 +397,26 @@ main .main-button {
 
 /*About Us*/
 
-.exhibits {
-    width: 707px;
+#aboutPage img {
+    width: 600px;
     height: auto;
-    align-items: center;
+    margin-top: 2rem;
+}
+
+#aboutPage h1 {
+    font-size:  50px;
+}
+
+#aboutPage {
+    margin: 1rem;
+}
+
+
+#aboutPage .column {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 1rem;
 }
 
 /*Contact Us/Visit*/
