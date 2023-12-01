@@ -5,11 +5,12 @@
     overflow-x: hidden;
 }
 
-#contributionPage {
+#contributionPage{
     font-family: 'Sora', sans-serif;
-    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(202, 74, 74));
+    background: linear-gradient(to bottom, rgb(158,126,123),rgb(202,73,73));
     overflow-x: hidden;
 }
+
 
 #contactPage {
     font-family: 'Sora', sans-serif;
@@ -244,7 +245,7 @@ header {
 /*Contribution*/
 
 #contributionPage .column {
-    background: rgb(200, 151, 151);
+    background: rgb(252, 216, 216);
     border-radius: 2px;
     border: solid 2px;
     margin-bottom: 1rem;
@@ -306,7 +307,7 @@ header {
 }
 
 #contributionPage .flex-grid-three {
-    background: rgb(200, 151, 151);
+    background: rgb(252, 216, 216);
     border: solid #000000 2px;
 }
 
