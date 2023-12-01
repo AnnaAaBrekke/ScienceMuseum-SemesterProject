@@ -5,6 +5,12 @@
     overflow-x: hidden;
 }
 
+#contributionPage {
+    font-family: 'Sora', sans-serif;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(202, 74, 74));
+    overflow-x: hidden;
+}
+
 #contactPage {
     font-family: 'Sora', sans-serif;
     overflow-x: hidden;
@@ -64,7 +70,8 @@ header {
     font-weight: 400;
 }
 
-input[type=button] {
+
+.main-button {
     background-color: rgb(202, 73, 73);
     border-radius: 10px;
     border: solid black 3px;
@@ -74,7 +81,7 @@ input[type=button] {
     margin-bottom: 2.5rem;
 }
 
-input[type=button]:hover {
+.home-button:hover {
     background-color: #ff9999; 
     cursor: pointer; 
 }
@@ -236,9 +243,57 @@ input[type=button]:hover {
 
 /*Contribution*/
 
+#contributionPage .column {
+    background: rgb(200, 151, 151)
+}
+
+.price-button {
+    padding: 10px 20px;
+    background: #FFFFFF; 
+    color: #000000; 
+    border: #000000 solid;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.price-button:hover,
+#oamount:hover {
+    background-color: rgb(202, 73, 73); 
+}
+
+#oamount {
+    padding: 10px 20px;
+    width: 80px;
+    border: #000000 solid;
+    margin-top: 0.5rem;
+}
+
+.select {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+}
+
+#cvv,
+#month,
+#year {
+    width: 70px;
+    padding: 0.1rem;
+    margin-right: 0.5rem;
+}
 
 
 
+.information {
+
+}
 
 
 /*Educate*/
