@@ -64,14 +64,14 @@ header {
     height: auto;
 }
 
-
 .logo {
     height: auto;
     max-width: 250px;
     margin-left: 1rem;
 }
 
-.header-nav {
+.header-nav,
+.footer-nav {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -82,6 +82,7 @@ header {
 .nav-list {
     display: flex;
     list-style-type: none;
+    margin-top: 4rem;
     z-index: 1;
 }
 
@@ -92,6 +93,28 @@ header {
 }
 
 /*Footer*/
+
+footer {
+    background: rgb(14, 14, 12);
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; 
+    flex: 1;
+    border: 3px;
+    height: 146px;
+}
+
+.footer-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 7rem;
+    gap: 1.5rem;
+    font-size: 18px;
+}
 
 
 /*Home*/
@@ -113,7 +136,7 @@ header {
     border: solid black 2px;
     max-width: 100%;
     width: 570px;
-    height: 570px;
+    height: auto;
 }
 
 /* First part of Home */
@@ -144,6 +167,7 @@ main .main-button {
     justify-content: space-between;
     gap: none;
     background-color:  rgb(14, 14, 12);
+    border-radius: 3px;
 }
 
 .flex-grid-three .column-other {
@@ -157,16 +181,8 @@ main .main-button {
     border: 5px;
     color: #FFFFFF;
     background-color: #000000;
-    height: 40vh;
+    height: 25vh;
 }
-
-@media screen and (max-width: 1000px) { 
-    .inside-column {
-    height: 55vh;
-}
-}
-
-
 
 /* Third part of Home */
 
@@ -303,7 +319,7 @@ main .main-button {
     padding: 2rem;
 }
 
-#contributionPage h3 {
+#contributionPage h2 {
     text-decoration: underline;
 }
 
@@ -402,6 +418,10 @@ main .main-button {
     margin-top: 1rem;
 }
 
+#services h3 {
+    font-size: 30px;
+}
+
 /*Contact Us Form*/
 
 .flex-grid {
@@ -426,7 +446,7 @@ main .main-button {
 }
 
 .flex-grid p {
-    font-size: 20px;
+    font-size: 24px;
     text-decoration: solid;
 }
 
