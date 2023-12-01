@@ -407,10 +407,9 @@ main .main-button {
     font-size:  50px;
 }
 
-#aboutPage {
+#aboutPage  {
     margin: 1rem;
 }
-
 
 #aboutPage .column {
     display: flex;
