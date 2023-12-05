@@ -1,5 +1,6 @@
 
-#homePage{
+#homePage, 
+#exhibitPage {
     font-family: 'Sora', sans-serif;
     background: linear-gradient(to bottom, rgb(202,73,73), rgb(158,126,123));
     overflow-x: hidden;
@@ -306,8 +307,66 @@ main .main-button {
 
 /*Exhibitions*/
 
+#exhibitPage .flex-grid-two {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
 
+#exhibitPage .column {
+    background: rgb(255, 255, 255);
+    border-radius: 2px;
+    border: solid 2px;
+    margin-bottom: 1rem;
+    padding: 2rem;
+}
 
+.column-headline {
+    border-radius: 2px;
+    border: solid 2px;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+#exhibitPage h1 {
+    font-size: 38px;
+    font-weight: 900;
+    color: #000000;
+    text-align: start;
+}
+
+#exhibitPage h2 {
+    color: #000000;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.flex-grid h3 {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.flex-grid-two h3 {
+    text-decoration: underline;
+}
+
+#exhibitPage #special-events h2 {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+#exhibitPage #special-events .column {
+    flex: 1;
+    background-color: rgb(237, 95, 81);
+    padding: 1rem;
+    border-radius: 5px;
+    border: solid black 2px;
+    max-width: 100%;
+    width: 570px;
+    height: auto;
+}
 
 
 /*Contribution*/
