@@ -45,6 +45,11 @@ main img {
     cursor: pointer; 
 }
 
+body a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
 /*Header*/
 
 header {
@@ -176,7 +181,7 @@ footer {
     font-size: 70px;
 }
 
-.flex-grid-two h2 {
+#homePage h2 {
     font-size: 40px;
     font-weight: 400;
 }
@@ -184,7 +189,6 @@ footer {
 main .main-button {
     margin: 0;
 }
-
 
 .girl-VR {
     width: 330px;
@@ -236,7 +240,7 @@ main .main-button {
     flex-direction: row;
     background-color: #000000;
     border-radius: 5px;
-    align-items: center
+    align-items: center;
 }
 
 .flex-grid-two-dark .column-dark {
@@ -258,7 +262,7 @@ main .main-button {
 
 .night{
     max-width: 320px;
-    max-height: auto;
+    height: auto;
 }
 
 /* Fifth part of Home */
