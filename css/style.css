@@ -48,31 +48,38 @@ main img {
 /*Header*/
 
 header {
-    background: rgb(14, 14, 12);
+    background-color: rgb(14, 14, 12);
+    background-image: url(/images/celso-405219.jpg);
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-position: top;
     color: #FFFFFF;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px; 
-    flex: 1;
-    border: 3px;
-}
-
-.headerimg {
-    display: flex;
-    flex: 1;
-    max-width: 100%;
-    min-width: 350px;
-    height: auto;
+    border: 1px solid black;
+    position: relative;
 }
 
 .logo {
     height: auto;
     max-width: 250px;
     margin-left: 1rem;
+    margin-top: 5rem;
+    z-index: 1;
+    border-radius: 5px;
 }
 
-.header-nav,
+.header-nav {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 1;
+    margin-top: 3rem;
+}
+
 .footer-nav {
     display: flex;
     flex-direction: column;
@@ -84,7 +91,7 @@ header {
 .nav-list {
     display: flex;
     list-style-type: none;
-    margin-top: 4rem;
+    margin-top: 1.5rem;
     z-index: 1;
 }
 
@@ -94,6 +101,29 @@ header {
     z-index: 1;
 }
 
+.hamburger-menu {
+    display: none;
+  }
+
+
+@media screen and (max-width: 700px) {
+    .logo {
+        height: auto;
+        max-width: 200px;
+    }
+
+    .header-nav {
+      display: none;
+    }
+  
+    .hamburger-menu {
+      display: block; 
+      cursor: pointer;
+      font-size: 2rem;
+      margin: 1rem;
+      margin-top: 8rem;
+  }
+}
 /*Footer*/
 
 footer {
