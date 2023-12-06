@@ -36,7 +36,7 @@ main img {
     justify-content: center;
     font-size: 24px;
     font-weight: 600;
-    margin: 1.5rem;
+    margin: 1rem;
     margin-bottom: 0;
 }
 
@@ -45,10 +45,6 @@ main img {
     cursor: pointer; 
 }
 
-body a {
-    text-decoration: none;
-    color: #FFFFFF;
-}
 
 /*Header*/
 
@@ -97,19 +93,66 @@ header {
     display: flex;
     list-style-type: none;
     margin-top: 1.5rem;
-    z-index: 1;
 }
 
-.nav-list li {
-    margin-right: 1.5rem;
-    font-size: 20px;
-    z-index: 1;
-}
+/*Dropdown*/
 
 .hamburger-menu {
     display: none;
   }
 
+.nav-list button {
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1;
+    margin: 1rem;
+}
+
+.nav-list a:hover, 
+button:hover {
+    color: rgb(202,73,73);
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.dropdown {
+    height: 3vh;
+}
+
+.dropdown ul {
+    background: rgb(14, 14, 12);
+    list-style: none;
+    width: 150px;
+    height: 170px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+    transform: translateY(-10px);
+    font-size: 20px;
+}
+
+.dropdown li {
+    padding: 0.5rem;
+    justify-content: center;
+}
+
+.dropdown button:focus + ul {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0px);
+}
+
+
+/*Media Screens*/
 
 @media screen and (max-width: 700px) {
     .logo {
