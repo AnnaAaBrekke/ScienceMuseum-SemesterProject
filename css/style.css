@@ -97,6 +97,18 @@ header {
 
 /*Dropdown*/
 
+.bar {
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    right: 3rem;
+    margin-top: 3rem;
+}
+
 .hamburger-menu {
     display: none;
   }
@@ -105,24 +117,30 @@ header {
     background: none;
     border: none;
     color: #FFFFFF;
-    font-size: 24px;
+    font-size: 26px;
     cursor: pointer;
     z-index: 1;
     margin: 1rem;
 }
 
 .nav-list a:hover, 
-button:hover {
+button:hover,
+.hamburger-menu button:hover {
     color: rgb(202,73,73);
 }
 
-.nav-list a {
+.nav-list a,
+.hamburger-menu a {
     text-decoration: none;
     color: #FFFFFF;
 }
 
 .dropdown {
     height: 3vh;
+}
+
+.hamburger-menu {
+    height: 10vh;
 }
 
 .dropdown ul {
@@ -138,23 +156,49 @@ button:hover {
     transition: all 0.4s ease;
     transform: translateY(-10px);
     font-size: 20px;
+    position: absolute;
+    top: 11rem;
+    right: 15rem;
 }
 
-.dropdown li {
+.hamburger-menu ul {
+    background: rgb(14, 14, 12);
+    list-style: none;
+    width: 150px;
+    height: 250px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+    transform: translateY(-10px);
+    font-size: 20px;
+    position: absolute;
+    top: 10.2rem;
+    right: 1px;
+}
+
+.dropdown li,
+.hamburger-menu li {
     padding: 0.5rem;
     justify-content: center;
 }
 
-.dropdown button:focus + ul {
+.dropdown button:focus + ul,
+.hamburger-menu button:focus + ul {
     opacity: 1;
     pointer-events: all;
     transform: translateY(0px);
 }
 
+.involved {
+    font-weight: 800;
+}
 
 /*Media Screens*/
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
     .logo {
         height: auto;
         max-width: 200px;
@@ -167,9 +211,6 @@ button:hover {
     .hamburger-menu {
       display: block; 
       cursor: pointer;
-      font-size: 2rem;
-      margin: 1rem;
-      margin-top: 8rem;
   }
 }
 /*Footer*/
