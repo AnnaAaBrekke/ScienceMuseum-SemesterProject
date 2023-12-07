@@ -177,6 +177,7 @@ button:hover,
     position: absolute;
     top: 10.2rem;
     right: 1px;
+    z-index: 1;
 }
 
 .dropdown li,
@@ -291,6 +292,11 @@ main .main-button {
     transform: scaleX(-1);
 }
 
+.flex-grid-two a {
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+}
 /* Second part of Home */
 
 .flex-grid-three {
@@ -357,6 +363,10 @@ main .main-button {
     font-weight: 200;
 }
 
+.flex-grid-two-dark a {
+    color: #FFFFFF;
+}
+
 .night{
     max-width: 320px;
     height: auto;
@@ -418,10 +428,15 @@ main .main-button {
     margin-top: 2rem;
 }
 
-.explore {
+.explore-exhibit {
     font-size: 28px;
     font-weight: 700;
     text-decoration: underline;
+}
+
+.explore-exhibit a {
+    color: #000000;
+    cursor: pointer;
 }
 
 .whale {
