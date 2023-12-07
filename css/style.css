@@ -233,12 +233,21 @@ button:hover,
     margin-right: 1rem;
 }
 
+.footer-nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.footer-nav a:hover {
+    cursor: pointer;
+    color: rgb(117, 117, 117);
+}
+
 @media screen and (max-width: 900px) {
     .footer-nav ul {
         font-size: 12px;
     }
 }
-
 
 /*Home*/
 
