@@ -13,8 +13,9 @@
     overflow-x: hidden;
 }
 
-#contactPage,
-#aboutPage {
+#visitPage,
+#aboutPage, 
+#contactPage {
     font-family: 'Sora', sans-serif;
     overflow-x: hidden;
     background: #000000;
@@ -118,6 +119,7 @@ header, footer {
 
 .nav-list a:hover, 
 button:hover,
+.hamburger-menu a:hover,
 .hamburger-menu button:hover {
     color: rgb(202,73,73);
 }
@@ -145,7 +147,6 @@ button:hover,
     align-items: center;
     border-radius: 5px;
     opacity: 0;
-    pointer-events: none;
     transition: all 0.4s ease;
     transform: translateY(-10px);
     font-size: 20px;
@@ -163,7 +164,6 @@ button:hover,
     align-items: center;
     border-radius: 5px;
     opacity: 0;
-    pointer-events: none;
     transition: all 0.4s ease;
     transform: translateY(-10px);
     font-size: 20px;
@@ -280,7 +280,7 @@ main .main-button {
 .flex-grid-three {
     display: flex;
     justify-content: space-between;
-    gap:0;
+    gap: 0.5rem;
     background-color:  rgb(14, 14, 12);
     border-radius: 3px;
 }
