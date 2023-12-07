@@ -280,23 +280,25 @@ main .main-button {
 .flex-grid-three {
     display: flex;
     justify-content: space-between;
-    gap: none;
+    gap:0;
     background-color:  rgb(14, 14, 12);
     border-radius: 3px;
 }
 
 .flex-grid-three .column-other {
+    flex: 1; 
     padding: 0.3rem;
     border-radius: 5px;
+    display: flex; 
+    flex-direction: column;
 }
 
 .inside-column {
     border: solid black;
     padding: 0.5rem;
-    border: 5px;
     color: #FFFFFF;
     background-color: #000000;
-    height: 25vh;
+    flex: 1;
 }
 
 /* Third part of Home */
