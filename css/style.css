@@ -22,6 +22,13 @@
     color: #FFFFFF;
 }
 
+#privacypolicyPage {
+    font-family: 'Sora', sans-serif;
+    overflow-x: hidden;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
 main {
     padding: 1rem;
 }
@@ -790,6 +797,23 @@ input[type="submit"] {
 
 
 /*Privacy Policy/Terms&Conditions*/
+
+#privacypolicyPage h2{
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 500;
+    margin-top: -1rem;
+}
+
+#privacypolicyPage h3, h1 {
+    margin-left: 1rem;
+}  
+
+#privacypolicyPage p, ul {
+    margin-top: -0.75rem;
+}
+
+
 
 
 
