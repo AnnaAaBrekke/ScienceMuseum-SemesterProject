@@ -576,7 +576,6 @@ iframe {
     font-size: 20px;
 }
 
-
 #exhibitPage li {
     display: flex;
     flex-direction: column;
@@ -592,13 +591,14 @@ iframe {
 #contributionPage .column {
     background: rgb(252, 216, 216);
     border-radius: 2px;
-    border: solid 2px;
     margin-bottom: 1rem;
     padding: 2rem;
 }
 
-#contributionPage p {
+#contributionPage p,
+#get-involved a {
     font-weight: 400;
+    color: #000000;
 }
 
 .price-button {
@@ -654,17 +654,10 @@ iframe {
 
 /*Educate*/
 
-#educatePage {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
 #educatePage .column {
     background-color: #FFFFFF;
     max-width: 100%;
 }
-
 
 #educatePage img {
     display: flex;
@@ -684,7 +677,6 @@ iframe {
     width: 535px;
     border-radius: 5px;
 }
-
 
 #educatePage h1 {
     font-size: 40px;
@@ -737,6 +729,7 @@ iframe {
 
 #aboutPage h1 {
     font-size:  50px;
+    text-align: center;
 }
 
 #aboutPage  {
@@ -744,7 +737,7 @@ iframe {
 }
 
 #aboutPage .column {
-    display: flex;
+    display: block;
     flex-direction: column;
     text-align: left;
     margin-top: 1rem;
@@ -848,10 +841,6 @@ input[type="submit"]:hover {
     font-weight: 500;
     margin-top: -1rem;
 }
-
-#documentPage h3, h1 {
-    margin-left: 1rem;
-}  
 
 #documentPage p, ul {
     margin-top: -0.75rem;
