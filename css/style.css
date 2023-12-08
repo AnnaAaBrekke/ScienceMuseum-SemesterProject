@@ -543,14 +543,13 @@ iframe {
 
 #exhibitPage .flex-grid-two {
     display: flex;
-    align-items: center;
-    justify-self: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 #exhibitPage .column {
     background: rgb(255, 255, 255);
     border-radius: 2px;
-    border: solid 2px;
     margin-bottom: 1rem;
     padding: 2rem;
 }
@@ -591,8 +590,20 @@ iframe {
     font-weight: 800;
 }
 
-#exhibitPage, #special-events .column {
+#exhibitPage .column {
+    flex: 1 1 auto;
+    background-color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 5px;
+    border: solid black 2px;
+    max-width: 100%;
+    height: auto;
+    text-align: left;
+}
+
+#special-events .column {
     flex: 1;
+    flex-direction: row ;
     background-color: rgb(237, 95, 81);
     padding: 1rem;
     border-radius: 5px;
