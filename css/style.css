@@ -530,7 +530,7 @@ iframe {
     text-decoration: underline;
 }
 
-#exhibitPage #special-events h2 {
+#special-events h2 {
     font-size: 32px;
     font-weight: 800;
 }
@@ -766,7 +766,16 @@ iframe {
 
 #services h3 {
     font-size: 30px;
+    font-weight: 800;
+    backdrop-filter: blur(2px);
 }
+
+#services p {
+    font-weight: 500;
+    backdrop-filter: blur(15px);
+    border-radius: 5px;
+}
+
 
 /*Contact Us Form*/
 
