@@ -253,7 +253,6 @@ button:hover,
 
 .flex-grid-two {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 1rem;
@@ -261,14 +260,24 @@ button:hover,
 }
 
 .flex-grid-two .column {
-    flex: 1;
+    flex: 1 1 auto;
     background-color: rgb(237, 95, 81);
     padding: 1rem;
     border-radius: 5px;
     border: solid black 2px;
-    max-width: 100%;
-    width: 570px;
+    width: auto;
     height: auto;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px) {
+    .flex-grid-two {
+        justify-content: center;
+}
+
+    .flex-grid-two .column {
+      flex-basis: 100%; /* Set columns to take full width on smaller screens */
+    }
 }
 
 /* First part of Home */
@@ -321,11 +330,6 @@ button:hover,
 
 /* Third part of Home */
 
-.text-news {
-    font-size: 32px;
-    font-weight: 700;
-}
-
 .astronaut,
 .girl-machine {
     max-width: 567px;
@@ -351,7 +355,6 @@ button:hover,
 
 .flex-grid-two-dark h3 {
     font-size: 32px;
-    text-decoration: underline;
 }
 
 .flex-grid-two-dark p {
@@ -389,12 +392,20 @@ button:hover,
     border: solid black 2px;
     border-radius: 5px;
     justify-content: center;
-    min-width: 380px;
 }
 
 .column-educate h3 {
-    font-size: 28px;
     text-decoration: underline;
+}
+
+
+.column-educate p {
+    margin-top: 0.5rem;
+    font-weight:500;
+}
+
+.column-educate p {
+    margin-top: ;
 }
 
 .learn {
@@ -527,7 +538,7 @@ iframe {
 }
 
 .flex-grid-two h3 {
-    text-decoration: underline;
+    font-size: 24px;
 }
 
 #special-events h2 {
@@ -535,14 +546,13 @@ iframe {
     font-weight: 800;
 }
 
-#exhibitPage #special-events .column {
+#exhibitPage, #special-events .column {
     flex: 1;
     background-color: rgb(237, 95, 81);
     padding: 1rem;
     border-radius: 5px;
     border: solid black 2px;
     max-width: 100%;
-    width: 570px;
     height: auto;
 }
 
@@ -559,7 +569,6 @@ iframe {
 
 #biology h1 {
     margin: 0;
-    text-decoration: underline;
     margin-top: 2rem;
 }
 
@@ -586,10 +595,6 @@ iframe {
     border: solid 2px;
     margin-bottom: 1rem;
     padding: 2rem;
-}
-
-#contributionPage h2 {
-    text-decoration: underline;
 }
 
 #contributionPage p {
@@ -647,13 +652,6 @@ iframe {
     border: solid #000000 2px;
 }
 
-#contributionPage .flex-grid-three .column {
-    border: 0;
-}
-
-
-
-
 /*Educate*/
 
 #educatePage {
@@ -664,6 +662,7 @@ iframe {
 
 #educatePage .column {
     background-color: #FFFFFF;
+    max-width: 100%;
 }
 
 
@@ -686,44 +685,47 @@ iframe {
     border-radius: 5px;
 }
 
+
 #educatePage h1 {
     font-size: 40px;
-    text-decoration: underline;
     font-weight: 900;
     margin-top: 2rem;
-    margin-left: 1rem;
+    margin-left: 0;
 }
 
 #educatePage h2 {
-    margin-top: 2rem;
     margin-bottom: 2rem;
     font-size: 32px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 #educatePage h3 {
     text-decoration: none;
     font-size: 32px;
     font-weight: 500;
-    margin: 1rem;
+    text-align: center;
 }
 
 #educatePage h4 {
-    margin: 1rem;
     text-decoration: underline;
     font-weight: 300;
+    margin-left: 1rem;
 }
 
 #educatePage p {
-    margin: 1rem;
     font-weight: 400;
     font-size: 24px;
+    padding: 1rem;
 }
 
 .modern {
     min-width: 800px;
 }
 
+#educatePage img {
+    display: block;
+    margin: 0 auto;
+  }
 
 /*About Us*/
 
