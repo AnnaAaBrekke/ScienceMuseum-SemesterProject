@@ -44,7 +44,7 @@ main img {
     justify-content: center;
     font-size: 26px;
     font-weight: 600;
-    margin: 1rem;
+    margin-right: 1rem;
 }
 
 .main-button:hover {
@@ -253,31 +253,20 @@ button:hover,
 
 .flex-grid-two {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     gap: 1rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .flex-grid-two .column {
-    flex: 1 1 auto;
     background-color: rgb(237, 95, 81);
     padding: 1rem;
     border-radius: 5px;
     border: solid black 2px;
-    width: auto;
-    height: auto;
+    max-width: auto;
+    max-height: auto;
     box-sizing: border-box;
-}
-
-@media screen and (max-width: 800px) {
-    .flex-grid-two {
-        justify-content: center;
-}
-
-    .flex-grid-two .column {
-      flex-basis: 100%; /* Set columns to take full width on smaller screens */
-    }
 }
 
 /* First part of Home */
@@ -291,9 +280,20 @@ button:hover,
 }
 
 .girl-VR {
-    width: 330px;
+    display: flex;
+    max-width: 100%;
+    width: 967px;
     height: auto;
     transform: scaleX(-1);
+    justify-content: center;
+    align-items: center;
+}
+
+.girl-VR-2 {
+    display: flex;
+    max-width: 100%;
+    width: 967px;
+    height: auto;
 }
 
 .flex-grid-two a {
@@ -301,6 +301,23 @@ button:hover,
     color: #000000;
     cursor: pointer;
 }
+
+
+@media screen and (max-width: 1000px) {
+
+    .flex-grid-two {
+        justify-content: center;
+    }
+
+    .flex-grid-two h1 {
+        font-size: 40px;
+    }
+
+    #homePage h2 {
+        font-size: 28px;
+    }
+}
+    
 /* Second part of Home */
 
 .flex-grid-three {
@@ -312,7 +329,7 @@ button:hover,
 }
 
 .flex-grid-three .column-other {
-    flex: 1; 
+    flex: 1 1 100%; 
     padding: 0.3rem;
     border-radius: 5px;
     display: flex; 
@@ -325,6 +342,8 @@ button:hover,
     color: #FFFFFF;
     background-color: #000000;
     flex: 1;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 
@@ -332,7 +351,8 @@ button:hover,
 
 .astronaut,
 .girl-machine {
-    max-width: 567px;
+    width: 567px;
+    max-width: 100%;
     height: auto;
 }
 
@@ -362,12 +382,34 @@ button:hover,
     font-weight: 200;
 }
 
+@media screen and (max-width: 800px) {
+
+    .flex-grid-two-dark h3 {
+        font-size: 26px;
+        text-align: center;
+    }
+    .flex-grid-two-dark p {
+        font-size: 20px;
+        font-weight: 200;
+        margin: 0;
+        text-align: center;
+    }
+
+    .flex-grid-two-dark {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
 .flex-grid-two-dark a {
     color: #FFFFFF;
 }
 
-.night{
-    max-width: 320px;
+.night {
+    max-width: 100%;
+    width: 320px;
     height: auto;
 }
 
@@ -409,11 +451,13 @@ button:hover,
 }
 
 .learn {
+    max-width: 100%;
     width: 350px;
     height: auto;
 }
 
 .YoungStarsLogo {
+    max-width: 100%;
     width: 350px;
     height: auto;
     justify-content: center;
@@ -447,7 +491,8 @@ button:hover,
 }
 
 .whale {
-    max-width: 900px;
+    max-width: 100%;
+    width: 900px;
     height: auto;
 }
 
@@ -483,8 +528,8 @@ address {
 }
 
 iframe {
-    width: 300px;
-    height: 200px;
+    max-width: 100%;
+    height: auto;
     margin-top: 1rem;
     border-radius: 3px;
 }
@@ -711,7 +756,8 @@ iframe {
 }
 
 .modern {
-    min-width: 800px;
+    max-width: 100%;
+    width: 800px;
 }
 
 #educatePage img {
@@ -722,6 +768,7 @@ iframe {
 /*About Us*/
 
 #aboutPage img {
+    max-width: 100%;
     width: 600px;
     height: auto;
     margin-top: 2rem;
@@ -748,6 +795,7 @@ iframe {
 .museum {
     margin-bottom: 1rem;
     width: 700px;
+    max-width: 100%;
 }
 
 #services {
