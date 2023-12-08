@@ -798,7 +798,7 @@ input[type="text"] {
     border-radius: 5px;
 }
 
-input[type="message"] {
+textarea[type="message"] {
     font-size: 20px;
     border-radius: 5px;
     height: 150px;
@@ -818,6 +818,10 @@ input[type="submit"] {
     background-color: #FFFFFF;
 }
 
+input[type="submit"]:hover {
+    color:rgb(117, 117, 117);
+    cursor: pointer;
+}
 
 
 /*Privacy Policy/Terms&Conditions*/
