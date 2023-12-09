@@ -338,13 +338,14 @@ button:hover,
 
 .inside-column {
     border: solid black;
-    padding: 0.5rem;
+    padding: 1rem;
     color: #FFFFFF;
     background-color: #000000;
     flex: 1;
     max-width: 100%;
     box-sizing: border-box;
 }
+
 
 
 /* Third part of Home */
@@ -436,6 +437,7 @@ button:hover,
     justify-content: center;
 }
 
+
 .column-educate h3 {
     text-decoration: underline;
 }
@@ -443,11 +445,7 @@ button:hover,
 
 .column-educate p {
     margin-top: 0.5rem;
-    font-weight:500;
-}
-
-.column-educate p {
-    margin-top: ;
+    font-weight: 600;
 }
 
 .learn {
@@ -462,6 +460,12 @@ button:hover,
     height: auto;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
+}
+
+.YoungStarsLogo:hover {
+    cursor: pointer;
+    background-color: rgb(202, 73, 73);
 }
 
 /* Last part of Home */
@@ -483,6 +487,10 @@ button:hover,
     font-size: 28px;
     font-weight: 700;
     text-decoration: underline;
+}
+
+.explore-exhibit a:hover {
+    color: rgb(58, 58, 58);
 }
 
 .explore-exhibit a {
@@ -519,6 +527,8 @@ button:hover,
     cursor: pointer;
 }
 
+
+
 /*Visit*/
 
 address {
@@ -541,24 +551,12 @@ iframe {
 
 /*Exhibit Pages*/
 
-#exhibitPage .flex-grid-two {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-}
-
-#exhibitPage .column {
-    background: rgb(255, 255, 255);
-    border-radius: 2px;
-    margin-bottom: 1rem;
-    padding: 2rem;
-}
-
 .column-headline {
     border-radius: 2px;
     border: solid 2px;
     margin-bottom: 1rem;
     padding: 2rem;
+    justify-content: center;
     text-align: center;
 }
 
@@ -566,7 +564,6 @@ iframe {
     font-size: 38px;
     font-weight: 900;
     color: #000000;
-    text-align: start;
 }
 
 #exhibitPage h2 {
@@ -590,27 +587,64 @@ iframe {
     font-weight: 800;
 }
 
+@media screen and (max-width:1000px) {
+    #special-events h2 {
+        text-align: center;
+    }
+}
+
 #exhibitPage .column {
-    flex: 1 1 auto;
+    flex: 1;
     background-color: #FFFFFF;
     padding: 1rem;
     border-radius: 5px;
     border: solid black 2px;
-    max-width: 100%;
-    height: auto;
+    width: 400px;
+    max-width: 100;
+    height: 100%;
     text-align: left;
+    row-gap: 0;
+}
+
+
+#special-events .flex-grid-two,
+#exhibitPage .flex-grid-two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #special-events .column {
     flex: 1;
-    flex-direction: row ;
     background-color: rgb(237, 95, 81);
     padding: 1rem;
     border-radius: 5px;
     border: solid black 2px;
-    max-width: 100%;
-    height: auto;
+    width: 400px;
+    max-width: 100;
+    height: 100%;
+    text-align: left;
+    row-gap: 0;
 }
+
+@media screen and (min-width:1100px) {
+
+    #special-events .flex-grid-two {
+        flex-wrap: nowrap;
+    }
+
+    #special-events .column,
+    #exhibitPage .column {
+        max-width: 100%;
+        height: 100%;
+        width: 550px;
+    }
+
+    #special-events h2 {
+        text-align: center;
+    }
+}
+
 
 #biology {
     padding: 2rem;
@@ -630,6 +664,10 @@ iframe {
 
 #biology p {
     font-size: 20px;
+}
+
+#biology .column-educate {
+    text-align: left;
 }
 
 #exhibitPage li {
