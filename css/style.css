@@ -10,7 +10,6 @@
 
 #homePage, 
 #exhibitPage,
-#contributionPage,
 #educatePage  {
     font-family: 'Sora', sans-serif;
     background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
@@ -19,7 +18,8 @@
 
 #visitPage,
 #aboutPage, 
-#contactPage {
+#contactPage,
+#contributionPage {
     font-family: 'Sora', sans-serif;
     overflow-x: hidden;
     background:var(--text-color-2);
@@ -410,16 +410,18 @@ address {
     text-align: left;
 }
 
-#exhibitPage h1 {
+#exhibitPage h1,
+#contributionPage h1{
     font-size: 38px;
     font-weight: 900;
     color: var(--text-color-2);
 }
 
-#exhibitPage h2 {
+#exhibitPage h2,
+#contributionPage h2 {
     color: var(--text-color-2);
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .flex-grid h3 {
@@ -558,6 +560,10 @@ address {
 #contributionPage .flex-grid-three {
     background: var(--secondary-color);
     border: solid var(--text-color-2) 2px;
+}
+
+#donate-form {
+    color: var(--text-color-2);
 }
 
 /*Educate*/
