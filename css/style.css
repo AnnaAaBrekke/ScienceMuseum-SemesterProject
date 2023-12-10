@@ -407,8 +407,7 @@ address {
     border: solid 2px;
     margin-bottom: 1rem;
     padding: 2rem;
-    justify-content: center;
-    text-align: center;
+    text-align: left;
 }
 
 #exhibitPage h1 {
@@ -769,6 +768,17 @@ main img {
 .whale-img {
     max-width: 100%;
     width: 900px;
+    height: auto;
+}
+
+.cosmology-img {
+    width: 310px;
+    max-width: 100%;
+    height: auto;
+}
+
+.museum-img {
+    width: auto;
     height: auto;
 }
 
