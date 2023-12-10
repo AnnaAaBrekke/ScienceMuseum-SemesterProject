@@ -1,15 +1,19 @@
 
-#homePage, 
-#exhibitPage {
-    font-family: 'Sora', sans-serif;
-    background: linear-gradient(to bottom, rgb(202,73,73), rgb(158,126,123));
-    overflow-x: hidden;
+:root {
+    --primary-color: rgb(202, 73, 73);
+    --secondary-color: rgb(158, 126, 123);
+    --tertiary-color: rgb(14, 14, 12);
+    --quaternary-color: rgb(58, 58, 58); 
+    --text-color-1: #FFFFFF;
+    --text-color-2: #000000;
 }
 
+#homePage, 
+#exhibitPage,
 #contributionPage,
-#educatePage {
+#educatePage  {
     font-family: 'Sora', sans-serif;
-    background: linear-gradient(to bottom, rgb(158,126,123),rgb(202,73,73));
+    background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
     overflow-x: hidden;
 }
 
@@ -18,27 +22,23 @@
 #contactPage {
     font-family: 'Sora', sans-serif;
     overflow-x: hidden;
-    background: #000000;
-    color: #FFFFFF;
+    background:var(--text-color-2);
+    color: var(--text-color-1);
 }
 
 #documentPage {
     font-family: 'Sora', sans-serif;
     overflow-x: hidden;
-    background-color: #FFFFFF;
-    color: #000000;
+    background-color: var(--text-color-1);
+    color: var(--text-color-2);
 }
 
 main {
     padding: 1rem;
 }
 
-main img {
-    border-radius: 5px;
-}
-
 .main-button {
-    background-color: rgb(202, 73, 73);
+    background-color: var(--primary-color);
     border-radius: 10px;
     border: solid black 3px;
     justify-content: center;
@@ -52,31 +52,21 @@ main img {
     cursor: pointer; 
 }
 
-
 /*Header*/
 
 header, footer {
-    background-color: rgb(14, 14, 12);
+    background-color: var(--tertiary-color);
     background-image: url(/images/celso-405219.jpg);
     object-fit: contain;
     background-repeat: no-repeat;
     background-position: top;
-    color: #FFFFFF;
+    color: var(--text-color-1);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px; 
     border: 1px solid black;
     position: relative;
-}
-
-.logo {
-    height: auto;
-    max-width: 250px;
-    margin-left: 1rem;
-    margin-top: 5rem;
-    z-index: 1;
-    border-radius: 5px;
 }
 
 .header-nav {
@@ -99,7 +89,7 @@ header, footer {
 .bar {
     background: none;
     border: none;
-    color: #FFFFFF;
+    color: var(--text-color-1);
     font-size: 2.5rem;
     cursor: pointer;
     z-index: 1;
@@ -115,7 +105,7 @@ header, footer {
 .nav-list button {
     background: none;
     border: none;
-    color: #FFFFFF;
+    color: var(--text-color-1);
     font-size: 26px;
     font-weight: 600;
     cursor: pointer;
@@ -127,13 +117,13 @@ header, footer {
 button:hover,
 .hamburger-menu a:hover,
 .hamburger-menu button:hover {
-    color: rgb(202,73,73);
+    color: var(--primary-color);
 }
 
 .nav-list a,
 .hamburger-menu a {
     text-decoration: none;
-    color: #FFFFFF;
+    color: var(--text-color-1);
 }
 
 .dropdown {
@@ -145,7 +135,7 @@ button:hover,
 }
 
 .dropdown ul {
-    background: rgb(14, 14, 12);
+    background: var(--tertiary-color);
     list-style: none;
     width: 150px;
     height: 170px;
@@ -162,7 +152,7 @@ button:hover,
 }
 
 .hamburger-menu ul {
-    background: rgb(14, 14, 12);
+    background: var(--tertiary-color);
     list-style: none;
     width: 150px;
     height: 250px;
@@ -196,23 +186,6 @@ button:hover,
     font-weight: 800;
 }
 
-/*Media Screens*/
-
-@media screen and (max-width: 900px) {
-    .logo {
-        height: auto;
-        max-width: 200px;
-    }
-
-    .header-nav {
-      display: none;
-    }
-  
-    .hamburger-menu {
-      display: block; 
-      cursor: pointer;
-  }
-}
 
 /*Footer*/
 
@@ -235,7 +208,7 @@ button:hover,
 
 .footer-nav a {
     text-decoration: none;
-    color: #FFFFFF;
+    color: var(--text-color-1);
 }
 
 .footer-nav a:hover {
@@ -243,11 +216,6 @@ button:hover,
     color: rgb(117, 117, 117);
 }
 
-@media screen and (max-width: 900px) {
-    .footer-nav ul {
-        font-size: 12px;
-    }
-}
 
 /*Home*/
 
@@ -260,7 +228,7 @@ button:hover,
 }
 
 .flex-grid-two .column {
-    background-color: rgb(237, 95, 81);
+    background-color: var(--primary-color);
     padding: 1rem;
     border-radius: 5px;
     border: solid black 2px;
@@ -269,7 +237,6 @@ button:hover,
     box-sizing: border-box;
 }
 
-/* First part of Home */
 .flex-grid-two h1 {
     font-size: 70px;
 }
@@ -279,52 +246,17 @@ button:hover,
     font-weight: 400;
 }
 
-.girl-VR {
-    display: flex;
-    max-width: 100%;
-    width: 967px;
-    height: auto;
-    transform: scaleX(-1);
-    justify-content: center;
-    align-items: center;
-}
-
-.girl-VR-2 {
-    display: flex;
-    max-width: 100%;
-    width: 967px;
-    height: auto;
-}
-
 .flex-grid-two a {
     text-decoration: none;
-    color: #000000;
+    color: var(--text-color-2);
     cursor: pointer;
 }
-
-
-@media screen and (max-width: 1000px) {
-
-    .flex-grid-two {
-        justify-content: center;
-    }
-
-    .flex-grid-two h1 {
-        font-size: 40px;
-    }
-
-    #homePage h2 {
-        font-size: 28px;
-    }
-}
-    
-/* Second part of Home */
 
 .flex-grid-three {
     display: flex;
     justify-content: space-between;
     gap: 0.5rem;
-    background-color:  rgb(14, 14, 12);
+    background-color: var(--tertiary-color);
     border-radius: 3px;
 }
 
@@ -339,37 +271,24 @@ button:hover,
 .inside-column {
     border: solid black;
     padding: 1rem;
-    color: #FFFFFF;
-    background-color: #000000;
+    color: var(--text-color-1);
+    background-color: var(--text-color-2);
     flex: 1;
     max-width: 100%;
     box-sizing: border-box;
 }
 
-
-
-/* Third part of Home */
-
-.astronaut,
-.girl-machine {
-    width: 567px;
-    max-width: 100%;
-    height: auto;
-}
-
-/* Fourth part of Home */
-
 .flex-grid-two-dark {
     display: flex;
     flex-direction: row;
-    background-color: #000000;
+    background-color: var(--text-color-2);
     border-radius: 5px;
     align-items: center;
 }
 
 .flex-grid-two-dark .column-dark {
     flex: 1;
-    color: #FFFFFF;
+    color: var(--text-color-1);
     padding: 2.5rem;
     border-radius: 5px;
 }
@@ -383,38 +302,9 @@ button:hover,
     font-weight: 200;
 }
 
-@media screen and (max-width: 800px) {
-
-    .flex-grid-two-dark h3 {
-        font-size: 26px;
-        text-align: center;
-    }
-    .flex-grid-two-dark p {
-        font-size: 20px;
-        font-weight: 200;
-        margin: 0;
-        text-align: center;
-    }
-
-    .flex-grid-two-dark {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-}
-
 .flex-grid-two-dark a {
-    color: #FFFFFF;
+    color: var(--text-color-1);
 }
-
-.night {
-    max-width: 100%;
-    width: 320px;
-    height: auto;
-}
-
-/* Fifth part of Home */
 
 .home-text {
     font-size: 32px;
@@ -422,9 +312,6 @@ button:hover,
     text-align: center;
     margin: 3rem;
 }
-
-/* Sixth part of Home */
-
 
 .flex-grid-two .column-educate {
     flex: 1;
@@ -448,28 +335,6 @@ button:hover,
     font-weight: 600;
 }
 
-.learn {
-    max-width: 100%;
-    width: 350px;
-    height: auto;
-}
-
-.YoungStarsLogo {
-    max-width: 100%;
-    width: 350px;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-}
-
-.YoungStarsLogo:hover {
-    cursor: pointer;
-    background-color: rgb(202, 73, 73);
-}
-
-/* Last part of Home */
-
 .last-part-home {
     display: flex;
     align-items: center;
@@ -489,24 +354,19 @@ button:hover,
     text-decoration: underline;
 }
 
-.explore-exhibit a:hover {
-    color: rgb(58, 58, 58);
-}
+.explore-exhibit a:hover,
+input[type="submit"]:hover {
+    color:var(--quaternary-color);
+    cursor: pointer;
+} 
 
 .explore-exhibit a {
-    color: #000000;
+    color: var(--text-color-2);
     cursor: pointer;
 }
 
-.whale {
-    max-width: 100%;
-    width: 900px;
-    height: auto;
-}
-
-
 .social-icons h5 {
-    color: #FFFFFF;
+    color: var(--text-color-1);
     font-size: 40px;
     margin: 1rem;
     padding: 1rem;
@@ -519,15 +379,13 @@ button:hover,
     justify-content: center;
     flex-direction: row;
     list-style: none;
-    color:#FFFFFF;
+    color:var(--text-color-1);
     font-size: 3rem;
     padding: 1rem;
     margin: 1rem;
     gap: 3rem;
     cursor: pointer;
 }
-
-
 
 /*Visit*/
 
@@ -537,19 +395,12 @@ address {
     cursor: pointer;
 }
 
-iframe {
-    max-width: 100%;
-    height: auto;
-    margin-top: 1rem;
-    border-radius: 3px;
-}
-
 #visit a {
-    color:#FFFFFF; 
+    color:var(--text-color-1); 
     font-size: 14px;
 }
 
-/*Exhibit Pages*/
+/*Exhibit*/
 
 .column-headline {
     border-radius: 2px;
@@ -563,17 +414,17 @@ iframe {
 #exhibitPage h1 {
     font-size: 38px;
     font-weight: 900;
-    color: #000000;
+    color: var(--text-color-2);
 }
 
 #exhibitPage h2 {
-    color: #000000;
+    color: var(--text-color-2);
     font-size: 28px;
     font-weight: 500;
 }
 
 .flex-grid h3 {
-    color: #000000;
+    color: var(--text-color-2);
     font-size: 24px;
     font-weight: 400;
 }
@@ -587,15 +438,9 @@ iframe {
     font-weight: 800;
 }
 
-@media screen and (max-width:1000px) {
-    #special-events h2 {
-        text-align: center;
-    }
-}
-
 #exhibitPage .column {
     flex: 1;
-    background-color: #FFFFFF;
+    background-color: var(--text-color-1);
     padding: 1rem;
     border-radius: 5px;
     border: solid black 2px;
@@ -605,7 +450,6 @@ iframe {
     text-align: left;
     row-gap: 0;
 }
-
 
 #special-events .flex-grid-two,
 #exhibitPage .flex-grid-two {
@@ -616,7 +460,7 @@ iframe {
 
 #special-events .column {
     flex: 1;
-    background-color: rgb(237, 95, 81);
+    background-color: var(--primary-color);
     padding: 1rem;
     border-radius: 5px;
     border: solid black 2px;
@@ -627,34 +471,8 @@ iframe {
     row-gap: 0;
 }
 
-@media screen and (min-width:1100px) {
-
-    #special-events .flex-grid-two {
-        flex-wrap: nowrap;
-    }
-
-    #special-events .column,
-    #exhibitPage .column {
-        max-width: 100%;
-        height: 100%;
-        width: 550px;
-    }
-
-    #special-events h2 {
-        text-align: center;
-    }
-}
-
-
 #biology {
     padding: 2rem;
-}
-
-#biology img {
-    display: flex;
-    max-width: 100%;
-    width: 710px;
-    height: auto;
 }
 
 #biology h1 {
@@ -679,11 +497,10 @@ iframe {
 }
 
 
-
 /*Contribution*/
 
 #contributionPage .column {
-    background: rgb(252, 216, 216);
+    background: var(--secondary-color);
     border-radius: 2px;
     margin-bottom: 1rem;
     padding: 2rem;
@@ -692,28 +509,30 @@ iframe {
 #contributionPage p,
 #get-involved a {
     font-weight: 400;
-    color: #000000;
+    color: var(--text-color-2);
 }
 
 .price-button {
     padding: 10px 20px;
-    background: #FFFFFF; 
-    color: #000000; 
-    border: #000000 solid;
+    background: var(--text-color-1); 
+    color: var(--text-color-2); 
+    border: var(--text-color-2) solid;
     border-radius: 5px;
     font-size: 20px;
     cursor: pointer;
 }
 
 .price-button:hover,
-#oamount:hover {
-    background-color: rgb(202, 73, 73); 
+#oamount:hover,
+.YoungStarsLogo:hover {
+    cursor: pointer; 
+    background-color: var(--primary-color); 
 }
 
 #oamount {
     padding: 10px 20px;
     width: 80px;
-    border: #000000 solid;
+    border: var(--text-color-2) solid;
     margin-top: 0.5rem;
 }
 
@@ -737,39 +556,16 @@ iframe {
     margin-right: 0.5rem;
 }
 
-#get-involved img{
-    width: 400px;
-}
-
 #contributionPage .flex-grid-three {
-    background: rgb(252, 216, 216);
-    border: solid #000000 2px;
+    background: var(--secondary-color);
+    border: solid var(--text-color-2) 2px;
 }
 
 /*Educate*/
 
 #educatePage .column {
-    background-color: #FFFFFF;
+    background-color: var(--text-color-1);
     max-width: 100%;
-}
-
-#educatePage img {
-    display: flex;
-    max-width: 100%;
-    width: 310px;
-    height: auto;
-}
-
-.modern {
-    display: flex;
-    max-width: 100%;
-    width: 1650px;
-    height: auto;
-}
-
-.researcher {
-    width: 535px;
-    border-radius: 5px;
 }
 
 #educatePage h1 {
@@ -804,24 +600,8 @@ iframe {
     padding: 1rem;
 }
 
-.modern {
-    max-width: 100%;
-    width: 800px;
-}
-
-#educatePage img {
-    display: block;
-    margin: 0 auto;
-  }
 
 /*About Us*/
-
-#aboutPage img {
-    max-width: 100%;
-    width: 600px;
-    height: auto;
-    margin-top: 2rem;
-}
 
 #aboutPage h1 {
     font-size:  50px;
@@ -839,7 +619,7 @@ iframe {
     margin-top: 1rem;
 }
 
-/*Contact Us/Visit*/
+/*Visit*/
 
 .museum {
     margin-bottom: 1rem;
@@ -851,7 +631,7 @@ iframe {
     background-image: url(/images/luke-ellis-craven-400722.jpg);
     background-size:cover; 
     background-position: center;
-    color: #000000;
+    color: var(--text-color-2);
     padding: 1.5rem;
     margin-top: 1rem;
 }
@@ -878,18 +658,18 @@ iframe {
 .flex-grid .column {
     display: flex;
     flex: 1;
-    background: rgb(14, 14, 12);
+    background: var(--tertiary-color);
     padding: 1rem;
     border-radius: 5px;
     border: solid black 2px;
     justify-content: center;
     align-items: center;
-    color: #FFFFFF;
+    color: var(--text-color-1);
 }
 
 .flex-grid h2 {
     font-size: 40px;
-    color: #FFFFFF;
+    color: var(--text-color-1);
 }
 
 .flex-grid p {
@@ -911,7 +691,7 @@ textarea[type="message"] {
 }
 
 input[type="submit"] {
-    color: #000000; 
+    color: var(--text-color-2); 
     text-align: center; 
     display: inline-block;
     font-size: 20px; 
@@ -921,14 +701,8 @@ input[type="submit"] {
     width: 100px;
     border-radius: 20px;
     border: solid black;
-    background-color: #FFFFFF;
+    background-color: var(--text-color-1);
 }
-
-input[type="submit"]:hover {
-    color:rgb(117, 117, 117);
-    cursor: pointer;
-}
-
 
 /*Privacy Policy/Terms&Conditions*/
 
@@ -943,7 +717,160 @@ input[type="submit"]:hover {
     margin-top: -0.75rem;
 }
 
+/*Images/Logo*/
 
+main img {
+    border-radius: 5px;
+}
 
+.logo {
+    height: auto;
+    max-width: 250px;
+    margin-left: 1rem;
+    margin-top: 5rem;
+    z-index: 1;
+    border-radius: 5px;
+}
 
+.girl-VR {
+    display: flex;
+    max-width: 100%;
+    width: 967px;
+    height: auto;
+    transform: scaleX(-1);
+    justify-content: center;
+    align-items: center;
+}
 
+.girl-VR-2 {
+    display: flex;
+    max-width: 100%;
+    width: 967px;
+    height: auto;
+}
+
+.column-img {
+    width: 567px;
+    max-width: 100%;
+    height: auto;
+}
+
+.night-img,
+.learn-img, 
+.YoungStarsLogo,
+#educatePage img {
+    max-width: 100%;
+    width: 350px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.whale-img {
+    max-width: 100%;
+    width: 900px;
+    height: auto;
+}
+
+iframe {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 3px;
+}
+
+#biology img {
+    display: flex;
+    max-width: 100%;
+    width: 710px;
+    height: auto;
+}
+
+#educatePage img {
+    display: block;
+    margin: 0 auto;
+  }
+
+#aboutPage img {
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+    margin-top: 2rem;
+}
+
+/*Media Screens*/
+
+@media screen and (max-width: 900px) {
+    .logo {
+        height: auto;
+        max-width: 200px;
+    }
+
+    .header-nav {
+      display: none;
+    }
+  
+    .hamburger-menu {
+      display: block; 
+      cursor: pointer;
+  }
+
+    .footer-nav ul {
+        font-size: 12px;
+    }
+
+    .flex-grid-two-dark h3 {
+        font-size: 26px;
+        text-align: center;
+    }
+    .flex-grid-two-dark p {
+        font-size: 20px;
+        font-weight: 200;
+        margin: 0;
+        text-align: center;
+    }
+
+    .flex-grid-two-dark {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .flex-grid-two {
+        justify-content: center;
+    }
+
+    .flex-grid-two h1 {
+        font-size: 40px;
+    }
+
+    #homePage h2 {
+        font-size: 28px;
+    }
+
+    #special-events h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:1100px) {
+
+    #special-events .flex-grid-two {
+        flex-wrap: nowrap;
+    }
+
+    #special-events .column,
+    #exhibitPage .column {
+        max-width: 100%;
+        height: 100%;
+        width: 550px;
+    }
+
+    #special-events h2 {
+        text-align: center;
+    }
+}
