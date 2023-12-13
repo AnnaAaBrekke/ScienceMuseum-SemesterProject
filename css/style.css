@@ -47,7 +47,9 @@ main {
     margin-right: 1rem;
 }
 
-.main-button:hover {
+.main-button:hover,
+.donate-button:hover,
+input[type="submit"]:hover {
     background-color: #ff9999; 
     cursor: pointer; 
 }
@@ -354,8 +356,7 @@ button:hover,
     text-decoration: underline;
 }
 
-.explore-exhibit a:hover,
-input[type="submit"]:hover {
+.explore-exhibit a:hover {
     color:var(--quaternary-color);
     cursor: pointer;
 } 
@@ -472,6 +473,14 @@ address {
     row-gap: 0;
 }
 
+#exhibitPage .column:hover,
+#special-events .column:hover,
+.column-educate:hover,
+.price-button:hover,
+#oamount:hover {
+    background-color: rgb(252, 231, 231);
+}
+
 #biology {
     padding: 2rem;
 }
@@ -523,13 +532,6 @@ address {
     cursor: pointer;
 }
 
-.price-button:hover,
-#oamount:hover,
-.YoungStarsLogo:hover {
-    cursor: pointer; 
-    background-color: var(--primary-color); 
-}
-
 #oamount {
     padding: 10px 20px;
     width: 80px;
@@ -537,7 +539,7 @@ address {
     margin-top: 0.5rem;
 }
 
-.select{
+.select {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -565,6 +567,7 @@ address {
 #donate-form {
     color: var(--text-color-2);
 }
+
 
 /*Educate*/
 
