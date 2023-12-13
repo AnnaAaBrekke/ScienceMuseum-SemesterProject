@@ -149,7 +149,7 @@ button:hover,
     transform: translateY(-10px);
     font-size: 20px;
     position: absolute;
-    top: 11rem;
+    top: 12rem;
     right: 15rem;
 }
 
@@ -317,20 +317,18 @@ button:hover,
 
 .flex-grid-two .column-educate {
     flex: 1;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: white;
-    padding: 1.5rem;
-    border: solid black 2px;
+    background-color: var(--text-color-1);
+    padding: 1rem;
     border-radius: 5px;
-    justify-content: center;
+    border: solid black 2px;
+    max-width: auto;
+    max-height: auto;
+    box-sizing: border-box;
 }
-
 
 .column-educate h3 {
     text-decoration: underline;
 }
-
 
 .column-educate p {
     margin-top: 0.5rem;
@@ -461,6 +459,11 @@ address {
     justify-content: center;
 }
 
+.read-more {
+    text-decoration: underline;
+    font-weight: 500;
+}
+
 #special-events .column {
     flex: 1;
     background-color: var(--primary-color);
@@ -476,7 +479,6 @@ address {
 
 #exhibitPage .column:hover,
 #special-events .column:hover,
-.column-educate:hover,
 .price-button:hover,
 #oamount:hover {
     background-color: rgb(252, 231, 231);
@@ -489,22 +491,23 @@ address {
 #biology h1 {
     margin: 0;
     margin-top: 2rem;
+    text-align: left;
 }
 
 #biology p {
     font-size: 20px;
+    font-weight: 400;
 }
 
 #biology .column-educate {
     text-align: left;
 }
 
-#exhibitPage li {
+#biology li {
     display: flex;
+    text-align: left;
     flex-direction: column;
-    list-style-type: none;
-    font-style: italic;
-    margin-bottom: 3rem;
+    list-style: none;
 }
 
 
@@ -579,22 +582,29 @@ address {
 
 /*Educate*/
 
-#educatePage .column {
-    background-color: var(--text-color-1);
+#educatePage .column-educate,
+#educatePage .flex-grid-two-dark,
+#educatePage .flex-grid-three {
+    margin: 1rem;
+}
+
+#educatePage .inside-column {
     max-width: 100%;
+    max-height: auto;
 }
 
 #educatePage h1 {
     font-size: 40px;
     font-weight: 900;
     margin-top: 2rem;
-    margin-left: 0;
+    margin-left: 1rem;
 }
 
 #educatePage h2 {
     margin-bottom: 2rem;
     font-size: 32px;
     font-weight: 600;
+    margin-left: 1rem;
 }
 
 #educatePage h3 {
@@ -616,7 +626,11 @@ address {
     padding: 1rem;
 }
 
-
+#educatePage .column-educate h5 {
+    font-weight: 500;
+    font-size: 28px;
+}
+  
 /*About Us*/
 
 #aboutPage h1 {
@@ -638,11 +652,14 @@ address {
 
 /*Visit*/
 
-.museum {
-    margin-bottom: 1rem;
-    width: 700px;
-    max-width: 100%;
+#visitPage .column-headline {
+    background-image: url(/images/scott-webb-102825.jpg);
+    object-fit: contain;
+    background-position: 100%;
+    border: none;
+    height: 300px;
 }
+
 
 #services {
     background-image: url(/images/luke-ellis-craven-400722.jpg);
@@ -664,7 +681,6 @@ address {
     backdrop-filter: blur(15px);
     border-radius: 5px;
 }
-
 
 /*Contact Us Form*/
 
@@ -787,8 +803,7 @@ main img {
 
 .night-img,
 .learn-img, 
-.YoungStarsLogo,
-#educatePage img {
+.YoungStarsLogo {
     max-width: 100%;
     width: 350px;
     height: auto;
@@ -808,11 +823,6 @@ main img {
     height: auto;
 }
 
-.museum-img {
-    width: auto;
-    height: auto;
-}
-
 iframe {
     max-width: 100%;
     height: auto;
@@ -825,6 +835,7 @@ iframe {
     max-width: 100%;
     width: 710px;
     height: auto;
+    margin-bottom: 1rem;
 }
 
 #educatePage img {
@@ -832,12 +843,13 @@ iframe {
     margin: 0 auto;
   }
 
-#aboutPage img {
+.torso-img {
     max-width: 100%;
     width: 600px;
     height: auto;
     margin-top: 2rem;
 }
+
 
 /*Media Screens*/
 
@@ -860,7 +872,8 @@ iframe {
         font-size: 12px;
     }
 
-    .flex-grid-two-dark h3 {
+    .flex-grid-two-dark h3,
+    #educatePage h3 {
         font-size: 26px;
         text-align: center;
     }
@@ -899,11 +912,12 @@ iframe {
         font-size: 40px;
     }
 
-    #homePage h2 {
+    #homePage h2  {
         font-size: 28px;
     }
 
-    #special-events h2 {
+    #special-events h2,
+    #educatePage h4 {
         text-align: center;
     }
 }
