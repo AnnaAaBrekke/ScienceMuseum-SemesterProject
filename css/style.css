@@ -397,8 +397,8 @@ address {
 
 #visit a {
     color:var(--text-color-1); 
-    font-size: 14px;
 }
+
 
 /*Exhibit*/
 
@@ -719,6 +719,11 @@ input[type="submit"] {
 }
 
 #documentPage p, ul {
+    margin-top: -0.75rem;
+}
+
+#documentPage address {
+    font-style: normal;
     margin-top: -0.75rem;
 }
 
