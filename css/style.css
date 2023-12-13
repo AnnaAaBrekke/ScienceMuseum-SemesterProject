@@ -539,7 +539,7 @@ address {
     margin-top: 0.5rem;
 }
 
-.select {
+.donate {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -556,7 +556,8 @@ address {
 #year {
     width: 70px;
     padding: 0.1rem;
-    margin-right: 0.5rem;
+    margin: 0.2rem;
+    margin-bottom: 1.5rem
 }
 
 #contributionPage .flex-grid-three {
@@ -568,6 +569,12 @@ address {
     color: var(--text-color-2);
 }
 
+.card-number {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: -1rem;
+}
 
 /*Educate*/
 
@@ -710,6 +717,14 @@ input[type="submit"] {
     border-radius: 20px;
     border: solid black;
     background-color: var(--text-color-1);
+}
+
+select {
+    font-size: 18px;
+    border-radius: 5px;
+    width: 215px;
+    color: rgb(34, 33, 33);
+    margin-bottom: 1rem;
 }
 
 /*Privacy Policy/Terms&Conditions*/
@@ -860,6 +875,16 @@ iframe {
         align-items: center;
     }
 
+    #contributionPage .flex-grid-three,
+    .donate {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contributionPage h3 {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 1000px) {
