@@ -45,7 +45,7 @@ main {
 header, 
 footer {
     background-color: var(--tertiary-color);
-    background-image: url(/images/celso-405219.jpg);
+    background-image: url(../images/celso-405219.jpg);
     object-fit: contain;
     background-repeat: no-repeat;
     background-position: top;
@@ -646,7 +646,7 @@ address {
 /*Visit*/
 
 #visitPage .column-headline {
-    background-image: url(/images/scott-webb-102825.jpg);
+    background-image: url(../images/scott-webb-102825.jpg);
     object-fit: contain;
     background-position: 100%;
     border: none;
@@ -665,7 +665,7 @@ address {
 
 
 #visitPage #contact-form {
-    background-image: url(/images/luke-ellis-craven-400722.jpg);
+    background-image: url(../images/luke-ellis-craven-400722.jpg);
     background-size:cover; 
     background-position: center;
     color: var(--text-color-2);
