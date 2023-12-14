@@ -468,7 +468,6 @@ address {
     row-gap: 0;
 }
 
-#exhibitPage .column:hover,
 #special-events .column:hover,
 .price-button:hover,
 #type-amount:hover {
@@ -889,18 +888,12 @@ iframe {
     margin-bottom: 1rem;
 }
 
-#educatePage img {
-    display: block;
-    margin: 0 auto;
-  }
-
 .torso-img {
     max-width: 100%;
     width: 600px;
     height: auto;
     margin-top: 2rem;
 }
-
 
 /*Media Screens*/
 
@@ -1015,6 +1008,5 @@ iframe {
         text-align: center;
     }  
 }
-
     
 
