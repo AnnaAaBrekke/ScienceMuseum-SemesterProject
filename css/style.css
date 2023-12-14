@@ -8,12 +8,17 @@
     --text-color-2: #000000;
 }
 
+body {
+    font-family: 'Sora', sans-serif;
+    overflow-x: hidden;
+}
+
+/*Background*/
+
 #homePage, 
 #exhibitPage,
 #educatePage  {
-    font-family: 'Sora', sans-serif;
     background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
-    overflow-x: hidden;
 }
 
 #visitPage,
@@ -27,8 +32,6 @@
 }
 
 #documentPage {
-    font-family: 'Sora', sans-serif;
-    overflow-x: hidden;
     background-color: var(--text-color-1);
     color: var(--text-color-2);
 }
@@ -37,26 +40,10 @@ main {
     padding: 1rem;
 }
 
-.main-button {
-    background-color: var(--primary-color);
-    border-radius: 10px;
-    border: solid black 3px;
-    justify-content: center;
-    font-size: 26px;
-    font-weight: 600;
-    margin-right: 1rem;
-}
-
-.main-button:hover,
-.donate-button:hover,
-input[type="submit"]:hover {
-    background-color: #ff9999; 
-    cursor: pointer; 
-}
-
 /*Header*/
 
-header, footer {
+header, 
+footer {
     background-color: var(--tertiary-color);
     background-image: url(/images/celso-405219.jpg);
     object-fit: contain;
@@ -241,6 +228,10 @@ button:hover,
 
 .flex-grid-two h1 {
     font-size: 70px;
+}
+
+#special-events .flex-grid-two p {
+    font-size: 20px;
 }
 
 #homePage h2 {
@@ -480,7 +471,7 @@ address {
 #exhibitPage .column:hover,
 #special-events .column:hover,
 .price-button:hover,
-#oamount:hover {
+#type-amount:hover {
     background-color: rgb(252, 231, 231);
 }
 
@@ -526,21 +517,20 @@ address {
     color: var(--text-color-2);
 }
 
-.price-button {
-    padding: 10px 20px;
-    background: var(--text-color-1); 
-    color: var(--text-color-2); 
-    border: var(--text-color-2) solid;
-    border-radius: 5px;
-    font-size: 20px;
-    cursor: pointer;
-}
 
-#oamount {
+#type-amount {
     padding: 10px 20px;
     width: 80px;
     border: var(--text-color-2) solid;
     margin-top: 0.5rem;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    font-size: 20px;
+    overflow: hidden;
 }
 
 .donate {
@@ -614,10 +604,11 @@ address {
     text-align: center;
 }
 
-#educatePage h4 {
+#educatePage .column-dark a {
     text-decoration: underline;
     font-weight: 300;
     margin-left: 1rem;
+    font-size: 20px;
 }
 
 #educatePage p {
@@ -626,14 +617,16 @@ address {
     padding: 1rem;
 }
 
-#educatePage .column-educate h5 {
+#educatePage .column-educate h4 {
     font-weight: 500;
     font-size: 28px;
+    text-decoration: none;
 }
   
 /*About Us*/
 
-#aboutPage h1 {
+#aboutPage h1,
+#contactPage h1 {
     font-size:  50px;
     text-align: center;
 }
@@ -660,8 +653,18 @@ address {
     height: 300px;
 }
 
+#services .flex-grid-three,
+#services .column-other, 
+#services .inside-column {
+    background-color: var(--primary-color);
+    color: var(--text-color-2);
+    border: none;
+    flex: 1;
+    flex-direction: row;
+}
 
-#services {
+
+#visitPage #contact-form {
     background-image: url(/images/luke-ellis-craven-400722.jpg);
     background-size:cover; 
     background-position: center;
@@ -670,16 +673,26 @@ address {
     margin-top: 1rem;
 }
 
-#services h3 {
-    font-size: 30px;
+#visitPage .inside-column h2,
+#services h2 {
+    font-size: 36px;
     font-weight: 800;
-    backdrop-filter: blur(2px);
 }
 
+#visitPage .inside-column h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#visitPage .inside-column, 
 #services p {
-    font-weight: 500;
-    backdrop-filter: blur(15px);
-    border-radius: 5px;
+    font-weight: 400;
+    font-size: 24px;
+    border-radius: 18px;
+}
+
+#visitPage #contact-form h1 {
+    font-size: 40px;
 }
 
 /*Contact Us Form*/
@@ -723,20 +736,6 @@ textarea[type="message"] {
     width: 210px;
 }
 
-input[type="submit"] {
-    color: var(--text-color-2); 
-    text-align: center; 
-    display: inline-block;
-    font-size: 20px; 
-    border-radius: 5px; 
-    cursor: pointer;
-    margin-left: 26%;
-    width: 100px;
-    border-radius: 20px;
-    border: solid black;
-    background-color: var(--text-color-1);
-}
-
 select {
     font-size: 18px;
     border-radius: 5px;
@@ -744,6 +743,7 @@ select {
     color: rgb(34, 33, 33);
     margin-bottom: 1rem;
 }
+
 
 /*Privacy Policy/Terms&Conditions*/
 
@@ -761,6 +761,56 @@ select {
 #documentPage address {
     font-style: normal;
     margin-top: -0.75rem;
+}
+
+/*Buttons*/
+
+.main-button {
+    background-color: var(--primary-color);
+    border-radius: 12px;
+    border: solid black 4px;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 600;
+    padding: 0.2rem;
+}
+
+.header-nav .main-button {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: var(--text-color-2);
+}
+
+.main-button:hover,
+.donate-button:hover,
+input[type="submit"]:hover {
+    background-color: #ff9999; 
+    cursor: pointer; 
+}
+
+.price-button {
+    padding: 10px 20px;
+    background: var(--text-color-1); 
+    color: var(--text-color-2); 
+    border: var(--text-color-2) solid;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+input[type="submit"] {
+    color: var(--text-color-2); 
+    text-align: center; 
+    display: inline-block;
+    font-size: 20px; 
+    border-radius: 5px; 
+    cursor: pointer;
+    margin-left: 26%;
+    width: 100px;
+    border-radius: 20px;
+    border: solid black;
+    background-color: var(--text-color-1);
 }
 
 /*Images/Logo*/
@@ -859,6 +909,14 @@ iframe {
         max-width: 200px;
     }
 
+    .column-image .girl-VR-2 {
+        display: none;
+    }
+
+    #homePage .column {
+        text-align: left;
+    }
+
     .header-nav {
       display: none;
     }
@@ -879,7 +937,7 @@ iframe {
     }
     .flex-grid-two-dark p {
         font-size: 20px;
-        font-weight: 200;
+        font-weight: 300;
         margin: 0;
         text-align: center;
     }
@@ -908,20 +966,37 @@ iframe {
         justify-content: center;
     }
 
-    .flex-grid-two h1 {
-        font-size: 40px;
-    }
-
-    #homePage h2  {
-        font-size: 28px;
-    }
-
     #special-events h2,
     #educatePage h4 {
         text-align: center;
     }
+
+    #services .flex-grid-three,
+    #services .column-other, 
+    #services .inside-column {
+        flex-direction: column;
+} 
+
+    #services .inside-column {
+        border: solid 2px;
+}
 }
 
+@media screen and (max-width: 1300px) {
+
+    .flex-grid-two h1 {
+        font-size: 40px;
+    }
+    
+    #homePage h2  {
+        font-size: 28px;
+    }
+
+    .main-button {
+        font-size: 22px;
+    }
+}
+    
 @media screen and (min-width:1100px) {
 
     #special-events .flex-grid-two {
@@ -937,5 +1012,8 @@ iframe {
 
     #special-events h2 {
         text-align: center;
-    }
+    }  
 }
+
+    
+
