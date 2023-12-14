@@ -531,6 +531,7 @@ address {
     height: 1px;
     font-size: 20px;
     overflow: hidden;
+    display: hidden;
 }
 
 .donate {
