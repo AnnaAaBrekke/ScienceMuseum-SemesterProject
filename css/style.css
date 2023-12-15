@@ -721,8 +721,10 @@ address {
     font-size: 24px;
 }
 
-#visitPage #contact-form h1 {
+#visitPage #contact-form h3 {
     font-size: 40px;
+    font-weight: 800;
+    color: var(--text-color-1);
 }
 
 /*Contact Us Form*/
@@ -759,7 +761,7 @@ input[type="text"] {
     border-radius: 5px;
 }
 
-textarea[type="message"] {
+textarea[id="message"] {
     font-size: 20px;
     border-radius: 5px;
     height: 150px;
@@ -1061,6 +1063,26 @@ iframe {
         flex-direction: column;
         margin: 1rem;
 }
+
+    #contactPage .flex-grid-three {
+        display: flex;
+        flex-direction: column;
+        margin: 0.5rem;
+        text-align: center;
+    }
+
+    #contactPage .flex-grid-three {
+        display: flex;
+        flex-direction: column;
+        margin: 0.5rem;
+        text-align: center;
+    }
+
+    #contactPage .flex-grid-three table {
+        text-align: left;
+        margin-left: 3rem;
+    }
+
 }
     
 @media screen and (min-width:1100px) {
