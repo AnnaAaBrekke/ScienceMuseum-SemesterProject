@@ -91,7 +91,7 @@ footer {
     display: none;
   }
 
-.nav-list button {
+.nav-button {
     background: none;
     border: none;
     color: var(--text-color-1);
