@@ -273,7 +273,7 @@ button:hover,
 }
 
 .inside-column table {
-    padding: 1.5rem;
+    padding-top: 1rem;
     width: 100%;
     border-collapse: separate;
 }
@@ -1078,11 +1078,11 @@ iframe {
         text-align: center;
     }
 
-    #contactPage .flex-grid-three table {
+    .flex-grid-three table {
         text-align: left;
         margin-left: 3rem;
+        margin-bottom: 1rem;
     }
-
 }
     
 @media screen and (min-width:1100px) {
