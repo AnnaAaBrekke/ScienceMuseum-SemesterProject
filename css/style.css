@@ -175,7 +175,6 @@ button:hover,
     font-weight: 800;
 }
 
-
 /*Footer*/
 
 .footer-nav {
@@ -418,7 +417,6 @@ address {
     color:var(--text-color-1); 
 }
 
-
 /*Exhibit*/
 
 .column-headline {
@@ -529,7 +527,6 @@ address {
     flex-direction: column;
     list-style: none;
 }
-
 
 /*Contribution*/
 
@@ -776,7 +773,6 @@ select {
     color: rgb(34, 33, 33);
     margin-bottom: 1rem;
 }
-
 
 /*Privacy Policy/Terms&Conditions*/
 
