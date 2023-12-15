@@ -286,7 +286,7 @@ th {
     padding: 0.15rem;
     padding-bottom: 1rem;
 }
-
+ 
 td {
     padding: 0.15rem
 }
@@ -301,6 +301,11 @@ td {
     background-color: var(--text-color-2);
     border-radius: 5px;
     align-items: center;
+}
+
+
+#homePage .flex-grid-two-dark {
+    margin-bottom: 1rem;
 }
 
 .flex-grid-two-dark .column-dark {
@@ -426,14 +431,15 @@ address {
 
 #exhibitPage h1,
 #contributionPage h1{
-    font-size: 38px;
+    font-size: 48px;
     font-weight: 900;
     color: var(--text-color-2);
     text-align: center;
 }
 
 #exhibitPage h2,
-#contributionPage h2 {
+#contributionPage h2,
+#contributionPage h3 {
     color: var(--text-color-2);
     font-size: 28px;
     font-weight: 600;
@@ -534,12 +540,19 @@ address {
     padding: 2rem;
 }
 
+#contributionPage .column h2 {
+    text-align: center;
+}
+
+#contributionPage h4 {
+    font-size: 22px;
+}
+
 #contributionPage p,
 #get-involved a {
     font-weight: 400;
     color: var(--text-color-2);
 }
-
 
 #type-amount {
     padding: 10px 20px;
@@ -988,7 +1001,7 @@ iframe {
         align-items: center;
     }
 
-    #contributionPage h3 {
+    #contributionPage h4 {
         text-align: center;
     }
 
