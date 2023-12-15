@@ -230,10 +230,6 @@ button:hover,
     font-size: 70px;
 }
 
-#special-events .flex-grid-two p {
-    font-size: 20px;
-}
-
 #homePage h2 {
     font-size: 40px;
     font-weight: 400;
@@ -250,7 +246,7 @@ button:hover,
     justify-content: space-between;
     gap: 0.5rem;
     background-color: var(--tertiary-color);
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 .flex-grid-three .column-other {
@@ -267,8 +263,36 @@ button:hover,
     color: var(--text-color-1);
     background-color: var(--text-color-2);
     flex: 1;
+    width: 100%;
     max-width: 100%;
     box-sizing: border-box;
+}
+
+#homePage .inside-column {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.inside-column table {
+    padding: 1.5rem;
+    width: 100%;
+    border-collapse: separate;
+}
+
+th {
+    text-align: left;
+    font-size: 24px;
+    font-weight: 800;
+    padding: 0.15rem;
+    padding-bottom: 1rem;
+}
+
+td {
+    padding: 0.15rem
+}
+
+#special-events .flex-grid-two p {
+    font-size: 20px;
 }
 
 .flex-grid-two-dark {
@@ -578,11 +602,6 @@ address {
     margin: 1rem;
 }
 
-#educatePage .inside-column {
-    max-width: 100%;
-    max-height: auto;
-}
-
 #educatePage h1 {
     font-size: 40px;
     font-weight: 900;
@@ -607,8 +626,8 @@ address {
 #educatePage .column-dark a {
     text-decoration: underline;
     font-weight: 300;
-    margin-left: 1rem;
     font-size: 20px;
+    margin-left: 1rem;
 }
 
 #educatePage p {
@@ -648,21 +667,19 @@ address {
 #visitPage .column-headline {
     background-image: url(../images/scott-webb-102825.jpg);
     object-fit: contain;
-    background-position: 100%;
+    background-position: 100% 54%;
     border: none;
-    height: 300px;
+    height: 400px;
 }
 
-#services .flex-grid-three,
-#services .column-other, 
 #services .inside-column {
     background-color: var(--primary-color);
     color: var(--text-color-2);
     border: none;
+    border-radius: none;
     flex: 1;
     flex-direction: row;
 }
-
 
 #visitPage #contact-form {
     background-image: url(../images/luke-ellis-craven-400722.jpg);
@@ -681,14 +698,17 @@ address {
 
 #visitPage .inside-column h3 {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
-#visitPage .inside-column, 
-#services p {
+#visitPage .inside-column {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     border-radius: 18px;
+}
+
+#services p {
+    font-size: 24px;
 }
 
 #visitPage #contact-form h1 {
@@ -895,6 +915,25 @@ iframe {
     margin-top: 2rem;
 }
 
+#educatePage .column-img {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+#educatePage .learn-img {
+    max-width: 100%;
+    width: 417px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#educatePage .night-img {
+    transform: scaleX(-1);
+    margin-left: 6rem;
+}
+
 /*Media Screens*/
 
 @media screen and (max-width: 900px) {
@@ -952,6 +991,16 @@ iframe {
     #contributionPage h3 {
         text-align: center;
     }
+
+    #educatePage .column-dark a {
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    #educatePage .inside-column .column-img {
+        margin-top: 2rem;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -961,7 +1010,7 @@ iframe {
     }
 
     #special-events h2,
-    #educatePage h4 {
+    #educatePage h4  {
         text-align: center;
     }
 
@@ -969,11 +1018,11 @@ iframe {
     #services .column-other, 
     #services .inside-column {
         flex-direction: column;
-} 
+    } 
 
-    #services .inside-column {
-        border: solid 2px;
-}
+    td {
+        padding-right: 1rem;
+    }
 }
 
 @media screen and (max-width: 1300px) {
@@ -989,6 +1038,20 @@ iframe {
     .main-button {
         font-size: 22px;
     }
+
+    #educatePage .night-img {
+        margin-left: 0.5rem
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    #homePage .flex-grid-three,
+    #visitPage .flex-grid-three {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+}
 }
     
 @media screen and (min-width:1100px) {
@@ -1008,5 +1071,5 @@ iframe {
         text-align: center;
     }  
 }
-    
+
 
