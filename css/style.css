@@ -192,6 +192,7 @@ button:hover,
     font-size: 18px;
     font-weight: 300;
     margin-right: 1rem;
+    padding: 0.2rem;
 }
 
 .footer-nav a {
@@ -265,6 +266,10 @@ button:hover,
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
+}
+
+.inside-column a {
+    color: var(--text-color-1);
 }
 
 #homePage .inside-column {
@@ -413,10 +418,6 @@ address {
     cursor: pointer;
 }
 
-#visit a {
-    color:var(--text-color-1); 
-}
-
 /*Exhibit*/
 
 .column-headline {
@@ -480,7 +481,8 @@ address {
 
 .read-more {
     text-decoration: underline;
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 #special-events .column {
@@ -584,8 +586,7 @@ address {
 #year {
     width: 70px;
     padding: 0.1rem;
-    margin: 0.2rem;
-    margin-bottom: 1.5rem
+    margin-top: -0.5rem;
 }
 
 #contributionPage .flex-grid-three {
@@ -759,6 +760,7 @@ input[type="text"] {
     margin-bottom: 1rem;
     font-size: 20px;
     border-radius: 5px;
+    width: 210px;
 }
 
 textarea[id="message"] {
@@ -1011,6 +1013,11 @@ iframe {
 
     #educatePage .inside-column .column-img {
         margin-top: 2rem;
+    }
+
+    #visitPage .column-headline {
+        height: 200px;
+    
     }
 }
 
