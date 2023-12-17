@@ -952,9 +952,10 @@ iframe {
 /*Media Screens*/
 
 @media screen and (max-width: 900px) {
+    
     .logo {
         height: auto;
-        max-width: 200px;
+        max-width: 140px;
     }
 
     .column-image .girl-VR-2 {
@@ -972,6 +973,11 @@ iframe {
     .hamburger-menu {
       display: block; 
       cursor: pointer;
+  }
+
+  .bar {
+    margin-top: 3rem;
+    font-size: 32px;
   }
 
     .footer-nav ul {
@@ -1017,6 +1023,10 @@ iframe {
         margin-top: 2rem;
     }
 
+    .flex-grid-three .column-other {
+        padding: 0;
+    }
+
     #visitPage .column-headline {
         height: 200px;
     
@@ -1048,15 +1058,18 @@ iframe {
 @media screen and (max-width: 1300px) {
 
     .flex-grid-two h1 {
-        font-size: 40px;
+        font-size: 30px;
     }
-    
+
     #homePage h2  {
-        font-size: 28px;
+        font-size: 22px;
     }
 
     .main-button {
-        font-size: 22px;
+        font-size: 14px;
+        margin: 0;
+        padding: 0.2rem;
+        border: 2px solid;
     }
 
     #educatePage .night-img {
@@ -1089,9 +1102,17 @@ iframe {
 
     .flex-grid-three table {
         text-align: left;
-        margin-left: 3rem;
+        margin-left: 1rem;
         margin-bottom: 1rem;
     }
+}
+
+@media screen and (max-width: 300px) {
+
+.bar {
+    margin-top: 6rem;
+    font-size: 28px;
+  }
 }
     
 @media screen and (min-width:1100px) {
